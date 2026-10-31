@@ -49,7 +49,12 @@ class Settings(BaseSettings):
 
     @property
     def allowed_origins(self) -> list[str]:
-        return [o.strip() for o in self.frontend_origin.split(",") if o.strip()]
+        origins: list[str] = []
+        for o in self.frontend_origin.split(","):
+            cleaned = o.strip().rstrip("/")
+            if cleaned:
+                origins.append(cleaned)
+        return origins or ["*"]
 
 
 @lru_cache
