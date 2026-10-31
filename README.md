@@ -190,7 +190,8 @@ on every view and in exports). Fixture dates are generated relative to today, so
 
 ## Live Demo & Deployment
 
-> **Live URL:** *Coming soon — will be updated after Render deployment.*
+> **Live Frontend URL:** [https://scout-ai-0hhw.onrender.com](https://scout-ai-0hhw.onrender.com)  
+> **Live Backend API (Health):** [https://scout-api-b22b.onrender.com/api/health](https://scout-api-b22b.onrender.com/api/health)
 
 ### Deploy on Render (free tier, no Docker needed)
 
