@@ -1,4 +1,5 @@
 import { type ReactNode } from "react";
+import { ArrowLeft } from "lucide-react";
 import { Badge, cx } from "../components/ui";
 import { useLang } from "../context/LangContext";
 import { useResearch, type Section } from "../context/ResearchContext";
@@ -35,9 +36,17 @@ function useNavItems() {
 }
 
 const VIEWS: Record<Section, ReactNode> = {
-  overview: <Overview />, sources: <Sources />, claims: <Claims />, conflicts: <Conflicts />, gaps: <Gaps />,
-  freshness: <Freshness />, coverage: <CoverageMatrix />, graph: <ClaimGraph />, evidence: <EvidenceBreakdown />,
-  checklist: <Checklist />, export: <ExportReport />,
+  overview: <Overview />,
+  sources: <Sources />,
+  claims: <Claims />,
+  conflicts: <Conflicts />,
+  gaps: <Gaps />,
+  freshness: <Freshness />,
+  coverage: <CoverageMatrix />,
+  graph: <ClaimGraph />,
+  evidence: <EvidenceBreakdown />,
+  checklist: <Checklist />,
+  export: <ExportReport />,
 };
 
 export function DashboardPage() {
@@ -49,63 +58,115 @@ export function DashboardPage() {
   const current = NAV[index];
 
   return (
-    <div className="flex flex-col gap-6 lg:flex-row">
-      <aside className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900 lg:sticky lg:top-6 lg:h-fit lg:w-64 lg:shrink-0">
-        <p className="border-b border-ink dark:border-paper/20 pb-2 font-mono text-[11px] uppercase tracking-[0.14em] dark:text-paper/50">
-          {t.contents}
-        </p>
-        <nav aria-label="Dashboard sections" className="flex gap-1 overflow-x-auto lg:flex-col">
-          {NAV.map(({ id, label, count, alert }, i) => (
-            <button key={id} onClick={() => setSection(id)} aria-current={section === id ? "page" : undefined}
-              className={cx(
-                "group flex shrink-0 items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-colors lg:pr-3",
-                section === id ? "bg-blue-50 text-blue-700 dark:bg-blue-500/10 dark:text-blue-300" : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white"
-              )}>
-              <span aria-hidden className={cx("w-5 font-mono text-[11px]", section === id ? "text-signal" : "text-ink-3 dark:text-paper/30")}>
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className={cx("flex-1 whitespace-nowrap", section === id && "font-semibold")}>
-                {label}
-              </span>
-              {count && <span className={cx("font-mono text-xs tabular-nums", alert?.(r) ? "text-signal" : "text-ink-3 dark:text-paper/30")}>{count(r)}</span>}
-            </button>
-          ))}
+    <div className="flex flex-col gap-8 lg:flex-row items-start">
+      {/* Sidebar Navigation */}
+      <aside className="w-full rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-card backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/90 dark:shadow-card-dark lg:sticky lg:top-6 lg:h-fit lg:w-72 lg:shrink-0">
+        <div className="flex items-center justify-between border-b border-slate-200/80 pb-3 dark:border-slate-800/80">
+          <p className="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            {t.contents}
+          </p>
+          <span className="font-mono text-[10px] text-blue-600 dark:text-cyan-400 font-semibold">
+            ScoutAi Radar
+          </span>
+        </div>
+
+        <nav aria-label="Dashboard sections" className="mt-3 flex gap-1.5 overflow-x-auto pb-1 lg:flex-col lg:pb-0">
+          {NAV.map(({ id, label, count, alert }, i) => {
+            const isActive = section === id;
+            return (
+              <button
+                key={id}
+                onClick={() => setSection(id)}
+                aria-current={isActive ? "page" : undefined}
+                className={cx(
+                  "group flex shrink-0 items-center gap-3 rounded-xl px-3.5 py-2.5 text-left text-sm transition-all lg:w-full",
+                  isActive
+                    ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20 font-bold"
+                    : "text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/60 dark:hover:text-white"
+                )}
+              >
+                <span
+                  aria-hidden
+                  className={cx(
+                    "w-5 font-mono text-[11px] transition-colors",
+                    isActive ? "text-cyan-200" : "text-slate-400 dark:text-slate-500"
+                  )}
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 whitespace-nowrap">{label}</span>
+                {count && (
+                  <span
+                    className={cx(
+                      "rounded-full px-2 py-0.5 font-mono text-[11px] tabular-nums transition-colors",
+                      isActive
+                        ? "bg-white/20 text-white font-bold"
+                        : alert?.(r)
+                        ? "bg-rose-500/10 text-rose-600 dark:bg-rose-500/20 dark:text-rose-400 font-bold"
+                        : "bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+                    )}
+                  >
+                    {count(r)}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </nav>
+
         <button
           onClick={reset}
-          className="mt-3 w-full rounded-lg border border-slate-200 px-3 py-2.5 text-left text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-50/50 px-3.5 py-2.5 text-xs font-semibold text-slate-600 shadow-sm hover:bg-slate-100 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-cyan-400 transition-all"
         >
-          {t.backToInput}
+          <ArrowLeft className="h-3.5 w-3.5" />
+          <span>{t.backToInput}</span>
         </button>
       </aside>
 
-      <main className="min-w-0 flex-1">
-        <header className="mb-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      {/* Main Content Area */}
+      <main className="min-w-0 flex-1 w-full">
+        <header className="mb-8 rounded-2xl border border-slate-200/80 bg-white/90 p-6 sm:p-8 shadow-card backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/90 dark:shadow-card-dark">
+          {/* Metadata Badges */}
           <div className="flex flex-wrap items-center gap-2">
             <Badge tone="blue">{r.domain === "news" ? t.newsDesk : t.scholarshipDesk}</Badge>
             <Badge tone={r.status === "success" ? "green" : r.status === "partial" ? "amber" : "red"}>
               {r.status === "success" ? t.complete : r.status === "partial" ? t.partialResults : t.failed}
             </Badge>
             <Badge tone={r.mode === "live" ? "green" : "violet"}>{r.mode.toUpperCase()}</Badge>
-            <span className="font-mono text-[11px] text-ink-3 dark:text-paper/30">{r.research_id}</span>
+            <span className="font-mono text-[11px] text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">
+              ID: {r.research_id}
+            </span>
           </div>
-          <h1 className="mt-3 max-w-4xl font-sans text-[clamp(2rem,4vw,3.25rem)] font-bold leading-tight tracking-tight text-slate-900 dark:text-white">{r.topic}</h1>
+
+          {/* Research Topic */}
+          <h1 className="mt-4 font-sans text-[clamp(1.85rem,3.5vw,3rem)] font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
+            {r.topic}
+          </h1>
+
           {r.mode !== "live" && (
-            <p className="mt-4 max-w-4xl border-l-2 border-violet-700 bg-violet-700/[0.06] dark:bg-violet-700/10 px-3 py-2 text-sm text-violet-900 dark:text-violet-300">
-              {r.mode_explanation}
-            </p>
+            <div className="mt-4 rounded-xl border border-violet-500/20 bg-violet-500/10 p-3.5 text-xs text-violet-900 dark:text-violet-300">
+              <span className="font-bold">Mode Notice:</span> {r.mode_explanation}
+            </div>
           )}
+
           {r.status === "failed" && (
-            <p role="alert" className="mt-4 border-l-2 border-signal bg-signal/[0.06] px-3 py-2 text-sm text-signal-dark">
+            <div role="alert" className="mt-4 rounded-xl border border-rose-500/30 bg-rose-500/10 p-4 text-xs font-semibold text-rose-700 dark:text-rose-300">
               No source content could be analysed. {r.errors.map((e) => e.message).join(" ")}
-            </p>
+            </div>
           )}
-          <h2 className="mt-8 flex items-baseline gap-3 border-b border-slate-200 pb-4 dark:border-slate-700">
-            <span className="font-mono text-sm text-signal">{String(index + 1).padStart(2, "0")}</span>
-            <span className="font-sans text-2xl font-bold text-slate-900 dark:text-white">{current.label}</span>
-          </h2>
+
+          {/* Active Module Header */}
+          <div className="mt-8 flex items-baseline gap-3 border-t border-slate-200/80 pt-6 dark:border-slate-800/80">
+            <span className="font-mono text-sm font-bold text-blue-600 dark:text-cyan-400">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+              {current.label}
+            </h2>
+          </div>
         </header>
-        {/* key forces re-mount = fade-in animation on section change */}
+
+        {/* Section View with smooth fade-in */}
         <div key={section} className="section-reveal">
           {VIEWS[section]}
         </div>

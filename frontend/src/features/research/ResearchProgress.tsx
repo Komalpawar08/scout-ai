@@ -1,5 +1,5 @@
-import { AlertTriangle, CheckCircle2, CircleDashed, Loader2, MinusCircle, XCircle } from "lucide-react";
-import { Card, cx } from "../../components/ui";
+import { AlertTriangle, CheckCircle2, CircleDashed, Loader2, MinusCircle, XCircle, Radio, Sparkles } from "lucide-react";
+import { cx } from "../../components/ui";
 import { useResearch } from "../../context/ResearchContext";
 import type { ProgressEvent } from "../../types/research";
 
@@ -37,12 +37,12 @@ export function stageStates(events: ProgressEvent[]): Record<string, { state: St
 }
 
 const ICONS: Record<StageState, JSX.Element> = {
-  pending: <CircleDashed className="h-4 w-4 text-ink-3 dark:text-paper/30" />,
-  started: <Loader2 className="h-4 w-4 animate-spin text-signal" />,
-  completed: <CheckCircle2 className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />,
-  skipped: <MinusCircle className="h-4 w-4 text-ink-3 dark:text-paper/30" />,
-  warning: <AlertTriangle className="h-4 w-4 text-amber-700 dark:text-amber-400" />,
-  failed: <XCircle className="h-4 w-4 text-signal" />,
+  pending: <CircleDashed className="h-4 w-4 text-slate-400 dark:text-slate-600" />,
+  started: <Loader2 className="h-4 w-4 animate-spin text-cyan-500" />,
+  completed: <CheckCircle2 className="h-4 w-4 text-emerald-500" />,
+  skipped: <MinusCircle className="h-4 w-4 text-slate-400" />,
+  warning: <AlertTriangle className="h-4 w-4 text-amber-500" />,
+  failed: <XCircle className="h-4 w-4 text-rose-500" />,
 };
 
 export function ResearchProgress() {
@@ -53,79 +53,120 @@ export function ResearchProgress() {
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 animate-fade-in">
-      <Card>
+      {/* Active Pipeline Card */}
+      <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-card backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/90 dark:shadow-card-dark">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-ink-2 dark:text-paper/50">
-              {input?.domain === "news" ? "News Intelligence" : "Scholarship Intelligence"}
-            </p>
-            <h2 className="mt-1 font-serif text-4xl leading-tight dark:text-paper">{input?.topic}</h2>
+            <div className="flex items-center gap-2">
+              <span className="flex h-2 w-2 rounded-full bg-cyan-500 animate-ping" />
+              <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-blue-600 dark:text-cyan-400">
+                {input?.domain === "news" ? "News Intelligence Pipeline" : "Scholarship Intelligence Pipeline"}
+              </p>
+            </div>
+            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              {input?.topic}
+            </h2>
             {input?.demo_scenario && (
-              <p className="mt-1 text-xs text-violet-800 dark:text-violet-300">Demo scenario — fictional, labelled fixture sources</p>
+              <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-violet-500/10 px-2.5 py-0.5 text-xs font-medium text-violet-600 dark:text-violet-400 border border-violet-500/20">
+                <Sparkles className="h-3 w-3" /> Fictional Fixture Sources (Demo)
+              </span>
             )}
           </div>
           {phase === "running" && (
             <button
               onClick={cancel}
-              className="rounded-lg border border-ink/10 dark:border-paper/10 px-3 py-1.5 text-sm text-ink dark:text-paper hover:bg-ink/5 dark:hover:bg-paper/5 transition-colors"
+              className="rounded-xl border border-slate-200 px-3.5 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-100 hover:text-rose-600 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800 transition-colors"
             >
               Cancel
             </button>
           )}
         </div>
-        <div
-          className="mt-5 h-1.5 overflow-hidden bg-ink/10 dark:bg-paper/10 rounded-full"
-          role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}
-        >
-          <div
-            className="h-full bg-signal transition-all duration-500 rounded-full"
-            style={{ width: `${pct}%` }}
-          />
-        </div>
-        <p className="mt-2 text-right text-xs text-ink-2 dark:text-paper/50">{done} / {STAGES.length} stages</p>
-      </Card>
 
+        {/* Dynamic Glowing Progress Bar */}
+        <div className="mt-6">
+          <div className="flex items-center justify-between text-xs font-mono font-medium text-slate-500 dark:text-slate-400 mb-2">
+            <span className="flex items-center gap-1.5 text-blue-600 dark:text-cyan-400 font-bold">
+              <Radio className="h-3.5 w-3.5 animate-pulse" /> Scanning &amp; Extracting Claims...
+            </span>
+            <span>{pct}% complete ({done} / {STAGES.length})</span>
+          </div>
+          <div
+            className="h-2.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800 p-0.5 shadow-inner"
+            role="progressbar"
+            aria-valuenow={pct}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <div
+              className="h-full rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 shadow-sm shadow-blue-500/50 transition-all duration-500"
+              style={{ width: `${pct}%` }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Error state */}
       {phase === "error" && (
-        <div role="alert" className="border-l-2 border-signal bg-signal/[0.06] p-5 animate-fade-in">
-          <p className="flex items-center gap-2 font-semibold text-signal-dark dark:text-signal">
+        <div role="alert" className="rounded-2xl border border-rose-500/30 bg-rose-500/10 p-6 animate-fade-in">
+          <p className="flex items-center gap-2 font-bold text-rose-600 dark:text-rose-400">
             <XCircle className="h-5 w-5" /> Research could not be completed
           </p>
-          <p className="mt-2 text-sm text-signal-dark/90 dark:text-signal/80">{error}</p>
+          <p className="mt-2 text-sm text-rose-700 dark:text-rose-300">{error}</p>
           <button
             onClick={reset}
-            className="mt-4 border border-ink dark:border-paper/30 px-4 py-2 text-sm text-ink dark:text-paper hover:bg-ink hover:text-paper dark:hover:bg-paper/10 transition-colors"
+            className="mt-4 rounded-xl bg-slate-900 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 transition-colors"
           >
             Back to research input
           </button>
         </div>
       )}
 
-      <Card title="Live research progress">
-        <ol className="space-y-1">
+      {/* Stages Stepper Card */}
+      <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-card backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/90 dark:shadow-card-dark">
+        <h3 className="border-b border-slate-200/80 pb-3 font-mono text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          Live Stage Execution
+        </h3>
+        <ol className="mt-4 space-y-1.5">
           {STAGES.map((s) => {
             const st = states[s.id];
+            const isStarted = st.state === "started";
             return (
               <li
                 key={s.id}
                 data-testid={`stage-${s.id}`}
                 data-state={st.state}
                 className={cx(
-                  "flex items-start gap-3 rounded-lg px-2 py-1.5 transition-colors",
-                  st.state === "started" && "bg-signal/[0.06] dark:bg-signal/10"
+                  "flex items-start gap-3 rounded-xl px-3 py-2 transition-all",
+                  isStarted
+                    ? "bg-blue-500/10 border border-blue-500/20 shadow-sm"
+                    : "hover:bg-slate-50 dark:hover:bg-slate-800/40"
                 )}
               >
-                <span className="mt-0.5">{ICONS[st.state]}</span>
-                <div className="min-w-0">
-                  <p className={cx("text-sm", st.state === "pending" ? "text-ink-3 dark:text-paper/30" : "text-ink dark:text-paper/80")}>
+                <span className="mt-0.5 shrink-0">{ICONS[st.state]}</span>
+                <div className="min-w-0 flex-1">
+                  <p
+                    className={cx(
+                      "text-sm font-medium",
+                      st.state === "pending"
+                        ? "text-slate-400 dark:text-slate-500"
+                        : isStarted
+                        ? "text-blue-600 dark:text-cyan-400 font-bold"
+                        : "text-slate-800 dark:text-slate-200"
+                    )}
+                  >
                     {s.label}
                   </p>
-                  {st.message && <p className="text-xs text-ink-2 dark:text-paper/50">{st.message}</p>}
+                  {st.message && (
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-mono">
+                      {st.message}
+                    </p>
+                  )}
                 </div>
               </li>
             );
           })}
         </ol>
-      </Card>
+      </div>
     </div>
   );
 }

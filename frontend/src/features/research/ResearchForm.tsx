@@ -1,4 +1,4 @@
-import { ArrowRight, Plus, X } from "lucide-react";
+import { ArrowRight, Plus, X, UploadCloud, Newspaper, GraduationCap, Sparkles, Zap, Globe, Sliders } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { cx } from "../../components/ui";
 import { useLang } from "../../context/LangContext";
@@ -7,12 +7,14 @@ import type { Domain, HealthInfo, ResearchInput } from "../../types/research";
 
 const DOMAINS: { id: Domain; label: string; blurb: string; question: string }[] = [
   {
-    id: "news", label: "News event",
+    id: "news",
+    label: "News event",
     blurb: "Dates, casualty figures, official responses and later developments, compared across publishers.",
     question: "What are the key verified details, conflicting claims and missing context about this event?",
   },
   {
-    id: "scholarship", label: "Scholarship",
+    id: "scholarship",
+    label: "Scholarship",
     blurb: "Eligibility, marks, income limit, documents, deadline, academic cycle and renewal rules.",
     question: "What should a student verify before applying for this scholarship?",
   },
@@ -91,85 +93,155 @@ export function ResearchForm({ health }: { health: HealthInfo | null }) {
     }
     setFormError(null);
     const input: ResearchInput = {
-      topic: topic.trim(), research_question: question.trim(), domain, user_urls: allUrls,
-      automatic_search: useSearch, max_sources: maxSources,
+      topic: topic.trim(),
+      research_question: question.trim(),
+      domain,
+      user_urls: allUrls,
+      automatic_search: useSearch,
+      max_sources: maxSources,
     };
     void start(input, files);
   }
 
   function runDemo(d: Domain) {
     const input: ResearchInput = d === "scholarship"
-      ? { topic: "Aarohan State Merit Scholarship (fictional demo)", research_question: DOMAINS[1].question, domain: d,
-          user_urls: [], automatic_search: false, max_sources: 3, demo_scenario: d }
-      : { topic: "Kalinagar bridge collapse (fictional demo)", research_question: DOMAINS[0].question, domain: d,
-          user_urls: [], automatic_search: false, max_sources: 3, demo_scenario: d };
+      ? {
+          topic: "Aarohan State Merit Scholarship (fictional demo)",
+          research_question: DOMAINS[1].question,
+          domain: d,
+          user_urls: [],
+          automatic_search: false,
+          max_sources: 3,
+          demo_scenario: d,
+        }
+      : {
+          topic: "Kalinagar bridge collapse (fictional demo)",
+          research_question: DOMAINS[0].question,
+          domain: d,
+          user_urls: [],
+          automatic_search: false,
+          max_sources: 3,
+          demo_scenario: d,
+        };
     void start(input, []);
   }
 
   return (
     <form onSubmit={submit} className="space-y-6" aria-label="Research input">
+      {/* Domain Switcher */}
       <fieldset>
-        <legend className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2 dark:text-paper/50">{t.desk}</legend>
-        <div className="mt-2 grid grid-cols-2 border border-ink dark:border-paper/30">
-          {DOMAINS.map(({ id, label, blurb }) => (
-            <button key={id} type="button" onClick={() => chooseDomain(id)} aria-pressed={domain === id}
-              className={cx(
-                "p-3 text-left transition first:border-r first:border-ink dark:first:border-paper/30",
-                domain === id
-                  ? "bg-ink dark:bg-paper text-paper dark:text-ink"
-                  : "hover:bg-ink/[0.04] dark:hover:bg-paper/[0.04] dark:text-paper"
-              )}>
-              <span className="block font-serif text-2xl leading-none">{label}</span>
-              <span className={cx("mt-2 block text-xs leading-snug", domain === id ? "text-paper/75 dark:text-ink/75" : "text-ink-2 dark:text-paper/50")}>
-                {blurb}
-              </span>
-            </button>
-          ))}
+        <legend className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+          {t.desk}
+        </legend>
+        <div className="mt-2 grid grid-cols-2 gap-2 rounded-2xl border border-slate-200 bg-slate-100/70 p-1.5 dark:border-slate-800 dark:bg-slate-950/60">
+          {DOMAINS.map(({ id, label, blurb }) => {
+            const isSelected = domain === id;
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={() => chooseDomain(id)}
+                aria-pressed={isSelected}
+                className={cx(
+                  "rounded-xl p-3 text-left transition-all",
+                  isSelected
+                    ? "bg-white text-slate-900 shadow-sm dark:bg-slate-800 dark:text-white ring-1 ring-blue-500/30"
+                    : "text-slate-600 hover:bg-white/50 dark:text-slate-400 dark:hover:bg-slate-900/50"
+                )}
+              >
+                <div className="flex items-center gap-2">
+                  {id === "news" ? (
+                    <Newspaper className={cx("h-4 w-4", isSelected ? "text-blue-600 dark:text-cyan-400" : "text-slate-400")} />
+                  ) : (
+                    <GraduationCap className={cx("h-4 w-4", isSelected ? "text-indigo-600 dark:text-indigo-400" : "text-slate-400")} />
+                  )}
+                  <span className="font-bold text-sm leading-tight">{label}</span>
+                </div>
+                <span className="mt-1.5 block text-[11px] leading-snug text-slate-500 dark:text-slate-400 line-clamp-2">
+                  {blurb}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </fieldset>
 
-      <div className="grid gap-5">
-        <label className="block">
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2 dark:text-paper/50">{t.researchTopic}</span>
-          <input
-            value={topic} onChange={(e) => setTopic(e.target.value)} maxLength={300}
-            placeholder={domain === "news" ? "e.g. Mumbai coastal road tunnel leak" : "e.g. Post-Matric Scholarship for SC students Maharashtra"}
-            className="mt-1 w-full border-0 border-b border-ink/40 dark:border-paper/30 bg-transparent px-0 py-2 text-[15px] text-ink dark:text-paper outline-none placeholder:text-ink-3 dark:placeholder:text-paper/30 focus:border-signal focus:ring-0"
-          />
-        </label>
-        <label className="block">
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2 dark:text-paper/50">{t.researchQuestion}</span>
-          <textarea
-            value={question} onChange={(e) => setQuestion(e.target.value)} rows={2} maxLength={600}
-            className="mt-1 resize-none w-full border-0 border-b border-ink/40 dark:border-paper/30 bg-transparent px-0 py-2 text-[15px] text-ink dark:text-paper outline-none placeholder:text-ink-3 dark:placeholder:text-paper/30 focus:border-signal focus:ring-0"
-          />
-        </label>
-
+      <div className="space-y-4">
+        {/* Topic Input */}
         <div>
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2 dark:text-paper/50">{t.sourceUrls}</span>
-          <div className="mt-1 flex items-end gap-2">
-            <div className="flex-1">
-              <input
-                value={urlDraft} onChange={(e) => setUrlDraft(e.target.value)}
-                onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); if (urlDraft.trim()) addUrls(urlDraft); } }}
-                placeholder={t.urlPlaceholder} aria-label="Source URL"
-                className="w-full border-0 border-b border-ink/40 dark:border-paper/30 bg-transparent px-0 py-2 text-[15px] text-ink dark:text-paper outline-none placeholder:text-ink-3 dark:placeholder:text-paper/30 focus:border-signal focus:ring-0"
-              />
-            </div>
+          <label className="block">
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              {t.researchTopic}
+            </span>
+            <input
+              value={topic}
+              onChange={(e) => setTopic(e.target.value)}
+              maxLength={300}
+              placeholder={domain === "news" ? "e.g. Mumbai coastal road tunnel leak" : "e.g. Post-Matric Scholarship for SC students Maharashtra"}
+              className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 shadow-sm transition-all focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-800/60 dark:text-white dark:focus:border-cyan-400 dark:focus:bg-slate-800"
+            />
+          </label>
+        </div>
+
+        {/* Question Input */}
+        <div>
+          <label className="block">
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              {t.researchQuestion}
+            </span>
+            <textarea
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              rows={2}
+              maxLength={600}
+              className="mt-1.5 w-full resize-none rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2 text-sm text-slate-900 placeholder:text-slate-400 shadow-sm transition-all focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-800/60 dark:text-white dark:focus:border-cyan-400 dark:focus:bg-slate-800"
+            />
+          </label>
+        </div>
+
+        {/* URL Inputs */}
+        <div>
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            {t.sourceUrls}
+          </span>
+          <div className="mt-1.5 flex items-center gap-2">
+            <input
+              value={urlDraft}
+              onChange={(e) => setUrlDraft(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  if (urlDraft.trim()) addUrls(urlDraft);
+                }
+              }}
+              placeholder={t.urlPlaceholder}
+              aria-label="Source URL"
+              className="flex-1 rounded-xl border border-slate-200 bg-slate-50/70 px-3.5 py-2 text-sm text-slate-900 placeholder:text-slate-400 shadow-sm transition-all focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-800/60 dark:text-white dark:focus:border-cyan-400 dark:focus:bg-slate-800"
+            />
             <button
-              type="button" onClick={() => urlDraft.trim() && addUrls(urlDraft)}
-              className="border border-ink dark:border-paper/30 px-2 py-1.5 text-ink dark:text-paper hover:bg-ink hover:text-paper dark:hover:bg-paper/10 transition-colors"
+              type="button"
+              onClick={() => urlDraft.trim() && addUrls(urlDraft)}
               aria-label="Add URL"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-white shadow-sm hover:bg-blue-700 active:scale-95 transition-all"
             >
               <Plus className="h-4 w-4" />
             </button>
           </div>
+
           {urls.length > 0 && (
-            <ul className="mt-2 flex flex-wrap gap-2">
+            <ul className="mt-2.5 flex flex-wrap gap-1.5">
               {urls.map((u) => (
-                <li key={u} className="flex max-w-full items-center gap-1 border border-ink/25 dark:border-paper/20 px-2 py-0.5 font-mono text-[11px] text-ink dark:text-paper">
+                <li
+                  key={u}
+                  className="flex max-w-full items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                >
                   <span className="truncate">{u}</span>
-                  <button type="button" onClick={() => setUrls((x) => x.filter((y) => y !== u))} aria-label={`Remove ${u}`}>
+                  <button
+                    type="button"
+                    onClick={() => setUrls((x) => x.filter((y) => y !== u))}
+                    aria-label={`Remove ${u}`}
+                    className="text-slate-400 hover:text-rose-500"
+                  >
                     <X className="h-3 w-3" />
                   </button>
                 </li>
@@ -178,20 +250,49 @@ export function ResearchForm({ health }: { health: HealthInfo | null }) {
           )}
         </div>
 
+        {/* PDF Uploads */}
         <div>
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-2 dark:text-paper/50">{t.pdfDocuments}</span>
-          <label className="mt-2 flex cursor-pointer items-baseline justify-between gap-3 border border-dashed border-ink/40 dark:border-paper/30 px-3 py-3 text-sm text-ink-2 dark:text-paper/50 hover:border-signal transition-colors">
-            <span>{t.addPdfText} <span className="text-ink dark:text-paper underline decoration-signal underline-offset-2">{t.choosePdf}</span></span>
-            <span className="shrink-0 font-mono text-[11px] text-ink-3 dark:text-paper/30">≤ {maxPdfMb} MB · in memory</span>
-            <input type="file" accept="application/pdf,.pdf" multiple className="sr-only" aria-label="Upload PDF"
-              onChange={(e) => { addFiles(e.target.files); e.target.value = ""; }} />
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            {t.pdfDocuments}
+          </span>
+          <label className="mt-1.5 flex cursor-pointer items-center justify-between rounded-xl border border-dashed border-slate-300 bg-slate-50/50 p-3 text-xs text-slate-600 hover:border-blue-500 hover:bg-blue-50/30 dark:border-slate-700 dark:bg-slate-800/40 dark:text-slate-400 dark:hover:border-cyan-400 transition-all">
+            <div className="flex items-center gap-2">
+              <UploadCloud className="h-4 w-4 text-blue-500" />
+              <span>
+                {t.addPdfText}{" "}
+                <span className="font-semibold text-blue-600 dark:text-cyan-400 underline decoration-blue-500/30">
+                  {t.choosePdf}
+                </span>
+              </span>
+            </div>
+            <span className="font-mono text-[10px] text-slate-400">≤ {maxPdfMb} MB</span>
+            <input
+              type="file"
+              accept="application/pdf,.pdf"
+              multiple
+              className="sr-only"
+              aria-label="Upload PDF"
+              onChange={(e) => {
+                addFiles(e.target.files);
+                e.target.value = "";
+              }}
+            />
           </label>
+
           {files.length > 0 && (
-            <ul className="mt-2 flex flex-wrap gap-2">
+            <ul className="mt-2.5 flex flex-wrap gap-1.5">
               {files.map((f, i) => (
-                <li key={`${f.name}-${i}`} className="flex items-center gap-1 border border-ink/25 dark:border-paper/20 px-2 py-0.5 font-mono text-[11px] text-ink dark:text-paper">
-                  {f.name} ({(f.size / 1024).toFixed(0)} KB)
-                  <button type="button" onClick={() => setFiles((x) => x.filter((_, j) => j !== i))} aria-label={`Remove ${f.name}`}>
+                <li
+                  key={`${f.name}-${i}`}
+                  className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-slate-100/80 px-2.5 py-1 font-mono text-[11px] text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                >
+                  <span className="truncate">{f.name} ({(f.size / 1024).toFixed(0)} KB)</span>
+                  <button
+                    type="button"
+                    onClick={() => setFiles((x) => x.filter((_, j) => j !== i))}
+                    aria-label={`Remove ${f.name}`}
+                    className="text-slate-400 hover:text-rose-500"
+                  >
                     <X className="h-3 w-3" />
                   </button>
                 </li>
@@ -200,54 +301,92 @@ export function ResearchForm({ health }: { health: HealthInfo | null }) {
           )}
         </div>
 
-        <div className="flex flex-wrap items-center gap-6">
-          <label className={cx("flex items-center gap-2 text-sm text-ink dark:text-paper", !searchAvailable && "opacity-60")}>
+        {/* Runtime toggles */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
+          <label className={cx("flex items-center gap-2 text-xs font-medium text-slate-700 dark:text-slate-300 cursor-pointer", !searchAvailable && "opacity-60")}>
             <input
-              type="checkbox" checked={autoSearch && searchAvailable} disabled={!searchAvailable}
-              onChange={(e) => setAutoSearch(e.target.checked)} className="h-4 w-4 accent-signal"
+              type="checkbox"
+              checked={autoSearch && searchAvailable}
+              disabled={!searchAvailable}
+              onChange={(e) => setAutoSearch(e.target.checked)}
+              className="h-4 w-4 rounded text-blue-600 accent-blue-600"
             />
-            {t.automaticWebSearch}
-            {!searchAvailable && <span className="text-xs text-amber-800 dark:text-amber-400">{t.noSearchProvider}</span>}
+            <Globe className="h-3.5 w-3.5 text-blue-500" />
+            <span>{t.automaticWebSearch}</span>
+            {!searchAvailable && <span className="text-[10px] text-amber-600">{t.noSearchProvider}</span>}
           </label>
-          <label className="flex items-center gap-2 text-sm text-ink dark:text-paper">
-            {t.maxSources}
+
+          <label className="flex items-center gap-2 text-xs font-medium text-slate-700 dark:text-slate-300">
+            <Sliders className="h-3.5 w-3.5 text-indigo-500" />
+            <span>{t.maxSources}</span>
             <input
-              type="range" min={1} max={health?.limits.max_sources ?? 10} value={maxSources}
-              onChange={(e) => setMaxSources(Number(e.target.value))} className="accent-signal" aria-label="Maximum sources"
+              type="range"
+              min={1}
+              max={health?.limits.max_sources ?? 10}
+              value={maxSources}
+              onChange={(e) => setMaxSources(Number(e.target.value))}
+              className="w-16 accent-blue-600"
+              aria-label="Maximum sources"
             />
-            <span className="w-6 text-center font-mono">{maxSources}</span>
+            <span className="w-5 text-right font-mono font-bold text-blue-600 dark:text-cyan-400">{maxSources}</span>
           </label>
         </div>
       </div>
 
       {formError && (
-        <p role="alert" className="border-l-2 border-signal bg-signal/[0.06] px-3 py-2 text-sm text-signal-dark">
+        <div role="alert" className="rounded-xl border border-rose-500/20 bg-rose-500/10 p-3 text-xs font-medium text-rose-600 dark:text-rose-400 animate-fade-in">
           {formError}
-        </p>
+        </div>
       )}
 
-      <button type="submit" className="group flex w-full items-center justify-between bg-ink dark:bg-paper px-4 py-3.5 text-left text-paper dark:text-ink hover:bg-signal dark:hover:bg-signal dark:hover:text-paper transition-colors">
-        <span className="font-serif text-2xl leading-none">{t.startResearch}</span>
-        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+      {/* Main Submit Button */}
+      <button
+        type="submit"
+        className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 p-3.5 text-center font-bold text-white shadow-md shadow-blue-500/25 hover:shadow-lg hover:shadow-blue-500/35 hover:scale-[1.01] active:scale-[0.99] transition-all"
+      >
+        <Sparkles className="h-4 w-4" />
+        <span className="text-base">{t.startResearch}</span>
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </button>
 
-      {/* Demo section — anchor target */}
-      <div id="demo-section" className="border-t border-ink/20 dark:border-paper/10 pt-3">
-        <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-3 dark:text-paper/30">{t.demoIntro}</p>
-        <div className="mt-2 grid gap-2 sm:grid-cols-2">
+      {/* Demo Quick Launch Section */}
+      <div id="demo-section" className="border-t border-slate-200/80 pt-4 dark:border-slate-800/80">
+        <div className="flex items-center justify-between">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            {t.demoIntro}
+          </p>
+          <span className="flex items-center gap-1 font-mono text-[10px] text-cyan-600 dark:text-cyan-400">
+            <Zap className="h-3 w-3" /> 1-Click
+          </span>
+        </div>
+
+        <div className="mt-2.5 grid gap-2.5 sm:grid-cols-2">
           <button
-            type="button" onClick={() => runDemo("scholarship")}
-            className="border border-ink/40 dark:border-paper/20 px-3 py-2 text-left text-sm hover:border-ink dark:hover:border-paper hover:bg-ink/[0.04] dark:hover:bg-paper/[0.04] transition-colors"
+            type="button"
+            onClick={() => runDemo("scholarship")}
+            className="group relative rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm hover:border-blue-500/50 hover:bg-blue-50/20 hover:shadow-md dark:border-slate-700 dark:bg-slate-800/80 dark:hover:border-blue-500/50 dark:hover:bg-slate-800 transition-all"
           >
-            <span className="font-mono text-[11px] text-signal">{t.demoA}</span>
-            <span className="block text-ink-2 dark:text-paper/50">{t.demoAText}</span>
+            <div className="flex items-center gap-1.5 font-bold text-xs text-blue-600 dark:text-cyan-400">
+              <GraduationCap className="h-3.5 w-3.5" />
+              <span>{t.demoA}</span>
+            </div>
+            <span className="mt-1 block text-[11px] leading-snug text-slate-500 dark:text-slate-400">
+              {t.demoAText}
+            </span>
           </button>
+
           <button
-            type="button" onClick={() => runDemo("news")}
-            className="border border-ink/40 dark:border-paper/20 px-3 py-2 text-left text-sm hover:border-ink dark:hover:border-paper hover:bg-ink/[0.04] dark:hover:bg-paper/[0.04] transition-colors"
+            type="button"
+            onClick={() => runDemo("news")}
+            className="group relative rounded-xl border border-slate-200 bg-white p-3 text-left shadow-sm hover:border-indigo-500/50 hover:bg-indigo-50/20 hover:shadow-md dark:border-slate-700 dark:bg-slate-800/80 dark:hover:border-indigo-500/50 dark:hover:bg-slate-800 transition-all"
           >
-            <span className="font-mono text-[11px] text-signal">{t.demoB}</span>
-            <span className="block text-ink-2 dark:text-paper/50">{t.demoBText}</span>
+            <div className="flex items-center gap-1.5 font-bold text-xs text-indigo-600 dark:text-indigo-400">
+              <Newspaper className="h-3.5 w-3.5" />
+              <span>{t.demoB}</span>
+            </div>
+            <span className="mt-1 block text-[11px] leading-snug text-slate-500 dark:text-slate-400">
+              {t.demoBText}
+            </span>
           </button>
         </div>
       </div>

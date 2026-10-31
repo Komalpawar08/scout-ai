@@ -1,4 +1,4 @@
-import { ChevronDown, ExternalLink, FileText } from "lucide-react";
+import { ChevronDown, ExternalLink, FileText, Sparkles } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import type { CoverageStatus, EvidenceStatus, FreshnessStatus, Priority, Source, SourceType } from "../types/research";
 
@@ -6,14 +6,22 @@ export function cx(...c: (string | false | null | undefined)[]) {
   return c.filter(Boolean).join(" ");
 }
 
-export function Card({ children, className, title, actions }: {
-  children: ReactNode; className?: string; title?: ReactNode; actions?: ReactNode;
+export function Card({
+  children,
+  className,
+  title,
+  actions,
+}: {
+  children: ReactNode;
+  className?: string;
+  title?: ReactNode;
+  actions?: ReactNode;
 }) {
   return (
-    <section className={cx("border-t border-ink dark:border-paper/20 pt-3", className)}>
+    <section className={cx("rounded-2xl border border-slate-200/80 bg-white/90 p-5 sm:p-6 shadow-sm backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/80 dark:shadow-card-dark", className)}>
       {(title || actions) && (
-        <header className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <h3 className="font-mono text-[11px] font-medium uppercase tracking-[0.14em] text-ink dark:text-paper/80">
+        <header className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200/60 pb-3 dark:border-slate-800/60">
+          <h3 className="font-mono text-[11px] font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
             {title}
           </h3>
           {actions}
@@ -26,7 +34,13 @@ export function Card({ children, className, title, actions }: {
 
 export function Badge({ children, tone = "slate", title }: { children: ReactNode; tone?: Tone; title?: string }) {
   return (
-    <span title={title} className={cx("inline-flex items-center gap-1 whitespace-nowrap rounded-sm border px-1.5 py-px font-mono text-[11px]", TONES[tone])}>
+    <span
+      title={title}
+      className={cx(
+        "inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border px-2 py-0.5 font-mono text-[11px] font-semibold tracking-wide",
+        TONES[tone]
+      )}
+    >
       {children}
     </span>
   );
@@ -34,26 +48,24 @@ export function Badge({ children, tone = "slate", title }: { children: ReactNode
 
 export type Tone = "slate" | "green" | "amber" | "red" | "blue" | "violet" | "cyan";
 const TONES: Record<Tone, string> = {
-  slate: "border-ink/25 dark:border-paper/20 text-ink-2 dark:text-paper/60",
-  green: "border-emerald-800/30 bg-emerald-700/[0.07] text-emerald-900 dark:border-emerald-500/30 dark:bg-emerald-700/10 dark:text-emerald-300",
-  amber: "border-amber-800/30 bg-amber-600/[0.08] text-amber-900 dark:border-amber-500/30 dark:bg-amber-600/10 dark:text-amber-300",
-  red: "border-signal/40 bg-signal/[0.07] text-signal-dark dark:border-signal/30 dark:bg-signal/10 dark:text-signal",
-  blue: "border-ink/50 dark:border-paper/30 text-ink dark:text-paper/80",
-  violet: "border-violet-800/30 bg-violet-700/[0.07] text-violet-900 dark:border-violet-500/30 dark:bg-violet-700/10 dark:text-violet-300",
-  cyan: "border-cyan-800/30 bg-cyan-700/[0.07] text-cyan-900 dark:border-cyan-500/30 dark:bg-cyan-700/10 dark:text-cyan-300",
+  slate: "border-slate-200 bg-slate-100/70 text-slate-700 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-300",
+  green: "border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/15 dark:text-emerald-300",
+  amber: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/15 dark:text-amber-300",
+  red: "border-rose-500/30 bg-rose-500/10 text-rose-700 dark:border-rose-500/20 dark:bg-rose-500/15 dark:text-rose-300",
+  blue: "border-blue-500/30 bg-blue-500/10 text-blue-700 dark:border-blue-500/20 dark:bg-blue-500/15 dark:text-blue-300",
+  violet: "border-violet-500/30 bg-violet-500/10 text-violet-700 dark:border-violet-500/20 dark:bg-violet-500/15 dark:text-violet-300",
+  cyan: "border-cyan-500/30 bg-cyan-500/10 text-cyan-700 dark:border-cyan-500/20 dark:bg-cyan-500/15 dark:text-cyan-300",
 };
 
 export const PRIORITY_TONE: Record<Priority, Tone> = { critical: "red", high: "amber", medium: "blue", low: "slate" };
 
-// Chart colors validated with the dataviz palette validator against the paper surface
-// (#F3EFE6): lightness band, chroma, CVD and normal-vision separation all pass in EVIDENCE_ORDER.
 export const EVIDENCE_META: Record<EvidenceStatus, { label: string; tone: Tone; color: string }> = {
-  corroborated: { label: "Corroborated", tone: "green", color: "#0f7a55" },
-  ai_inferred: { label: "AI-inferred", tone: "violet", color: "#7b3fb8" },
-  unsupported: { label: "Unsupported", tone: "amber", color: "#b5650a" },
-  directly_supported: { label: "Directly supported", tone: "blue", color: "#2f55c9" },
-  conflicting: { label: "Conflicting", tone: "red", color: "#c8361d" },
-  partially_supported: { label: "Partially supported", tone: "cyan", color: "#0891b2" },
+  corroborated: { label: "Corroborated", tone: "green", color: "#10b981" },
+  ai_inferred: { label: "AI-inferred", tone: "violet", color: "#8b5cf6" },
+  unsupported: { label: "Unsupported", tone: "amber", color: "#f59e0b" },
+  directly_supported: { label: "Directly supported", tone: "blue", color: "#3b82f6" },
+  conflicting: { label: "Conflicting", tone: "red", color: "#f43f5e" },
+  partially_supported: { label: "Partially supported", tone: "cyan", color: "#06b6d4" },
 };
 export const EVIDENCE_ORDER = Object.keys(EVIDENCE_META) as EvidenceStatus[];
 
@@ -94,15 +106,23 @@ export function SourceLink({ source, compact = false }: { source?: Source; compa
   const label = compact ? source.source_id : `${source.source_id} · ${source.title}`;
   if (source.url)
     return (
-      <a href={source.url} target="_blank" rel="noopener noreferrer" title={source.url}
-        className="inline-flex min-w-0 max-w-full items-center gap-1 text-ink dark:text-paper/80 underline decoration-ink/25 dark:decoration-paper/20 underline-offset-2 hover:decoration-signal">
+      <a
+        href={source.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={source.url}
+        className="inline-flex min-w-0 max-w-full items-center gap-1.5 font-medium text-blue-600 hover:text-blue-700 dark:text-cyan-400 dark:hover:text-cyan-300 underline decoration-blue-500/30 underline-offset-2 transition-colors"
+      >
         <span className="truncate">{label}</span>
         <ExternalLink className="h-3 w-3 shrink-0" />
       </a>
     );
   return (
-    <span className="inline-flex min-w-0 max-w-full items-center gap-1 text-ink-2 dark:text-paper/50" title={source.filename ?? undefined}>
-      <FileText className="h-3 w-3" />
+    <span
+      className="inline-flex min-w-0 max-w-full items-center gap-1.5 text-slate-600 dark:text-slate-400 font-medium"
+      title={source.filename ?? undefined}
+    >
+      <FileText className="h-3 w-3 text-indigo-500" />
       <span className="truncate">{label}</span>
     </span>
   );
@@ -110,40 +130,64 @@ export function SourceLink({ source, compact = false }: { source?: Source; compa
 
 export function Quote({ text, reference }: { text: string; reference?: ReactNode }) {
   return (
-    <figure className="border-l-2 border-signal pl-3">
-      <blockquote className="font-serif text-[17px] leading-snug text-ink dark:text-paper/90">"{text}"</blockquote>
-      {reference && <figcaption className="mt-1 font-mono text-[11px] text-ink-3 dark:text-paper/30">{reference}</figcaption>}
+    <figure className="relative rounded-xl border-l-4 border-blue-500 bg-blue-50/40 p-3.5 dark:border-cyan-400 dark:bg-slate-800/40">
+      <blockquote className="text-[14px] sm:text-[15px] italic leading-relaxed text-slate-800 dark:text-slate-200">
+        "{text}"
+      </blockquote>
+      {reference && (
+        <figcaption className="mt-2 font-mono text-[11px] text-slate-500 dark:text-slate-400">
+          {reference}
+        </figcaption>
+      )}
     </figure>
   );
 }
 
-export function Expandable({ summary, children, defaultOpen = false }: { summary: ReactNode; children: ReactNode; defaultOpen?: boolean }) {
+export function Expandable({
+  summary,
+  children,
+  defaultOpen = false,
+}: {
+  summary: ReactNode;
+  children: ReactNode;
+  defaultOpen?: boolean;
+}) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="border border-ink/15 dark:border-paper/10 transition-all">
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open}
-        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left hover:bg-ink/[0.02] dark:hover:bg-paper/[0.02] transition-colors">
+    <div className="rounded-xl border border-slate-200 bg-white/70 overflow-hidden dark:border-slate-800 dark:bg-slate-900/50 shadow-sm transition-all">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors"
+      >
         <div className="min-w-0 flex-1">{summary}</div>
-        <ChevronDown className={cx("h-4 w-4 shrink-0 text-ink-2 dark:text-paper/40 transition-transform", open && "rotate-180")} />
+        <ChevronDown
+          className={cx("h-4 w-4 shrink-0 text-slate-400 transition-transform duration-200", open && "rotate-180")}
+        />
       </button>
-      {open && <div className="border-t border-ink/10 dark:border-paper/10 px-4 py-3">{children}</div>}
+      {open && <div className="border-t border-slate-200/80 px-4 py-3.5 dark:border-slate-800/80">{children}</div>}
     </div>
   );
 }
 
 export function EmptyState({ title, children }: { title: string; children?: ReactNode }) {
   return (
-    <div className="flex flex-col items-center justify-center border border-dashed border-ink/25 dark:border-paper/15 px-6 py-10 text-center">
-      <p className="font-serif text-xl text-ink dark:text-paper">{title}</p>
-      {children && <div className="mt-1 max-w-md text-sm text-ink-2 dark:text-paper/50">{children}</div>}
+    <div className="flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 px-6 py-12 text-center dark:border-slate-800">
+      <Sparkles className="h-8 w-8 text-slate-300 dark:text-slate-600 mb-2" />
+      <p className="text-lg font-bold text-slate-800 dark:text-slate-200">{title}</p>
+      {children && <div className="mt-1 max-w-md text-xs sm:text-sm text-slate-500 dark:text-slate-400">{children}</div>}
     </div>
   );
 }
 
-export function ScoreBar({ value, color = "#16130F" }: { value: number; color?: string }) {
+export function ScoreBar({ value, color = "#2563eb" }: { value: number; color?: string }) {
   return (
-    <div className="h-1.5 w-full overflow-hidden bg-ink/10 dark:bg-paper/10">
-      <div className="h-full transition-all duration-700" style={{ width: `${Math.round(value * 100)}%`, background: color }} />
+    <div className="h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+      <div
+        className="h-full rounded-full transition-all duration-700 shadow-sm"
+        style={{ width: `${Math.round(value * 100)}%`, background: color }}
+      />
     </div>
   );
 }
@@ -153,5 +197,7 @@ export function fieldLabel(key: string) {
 }
 
 export function locationRef(c: { source_id: string; page_number: number | null; section: string | null }) {
-  return [c.source_id, c.page_number ? `page ${c.page_number}` : null, c.section ? `§ ${c.section}` : null].filter(Boolean).join(" · ");
+  return [c.source_id, c.page_number ? `page ${c.page_number}` : null, c.section ? `§ ${c.section}` : null]
+    .filter(Boolean)
+    .join(" · ");
 }
