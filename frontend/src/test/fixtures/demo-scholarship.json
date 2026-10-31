@@ -1,0 +1,3649 @@
+{
+ "research_id": "R-e1851dc976",
+ "created_at": "2026-10-30T07:05:57+00:00",
+ "domain": "scholarship",
+ "topic": "Aarohan State Merit Scholarship (fictional demo)",
+ "research_question": "What should a student verify before applying for this scholarship?",
+ "mode": "demo",
+ "mode_explanation": "DEMO: analysing clearly labelled fictional fixture sources with heuristic extraction. This is not live research.",
+ "status": "success",
+ "summary": "Scout reviewed 3 of 3 source(s) about \"Aarohan State Merit Scholarship (fictional demo)\" and extracted 29 traceable claim(s), 25 of which are directly quoted or corroborated. It found 2 possible conflict(s), 0 expected field(s) not found in the sources reviewed and 3 freshness warning(s). Research completeness against the scholarship criteria is 79.9/100 (high coverage).",
+ "search_queries": [],
+ "sources": [
+  {
+   "source_id": "S1",
+   "title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+   "url": "https://scholarships.aarohan.example/notice",
+   "filename": null,
+   "publisher": "[DEMO] Aarohan Scholarship Board",
+   "domain": "scholarships.aarohan.example",
+   "origin": "demo_fixture",
+   "source_type": "official_primary",
+   "source_type_reason": "DEMO fixture representing the official scholarship board notice.",
+   "publication_date": "2026-10-10",
+   "publication_date_origin": "HTML meta tag",
+   "updated_date": null,
+   "date_status": "found",
+   "retrieved_at": "2026-10-30T07:05:57+00:00",
+   "academic_cycle": "2026-27",
+   "event_date": null,
+   "extraction_status": "success",
+   "extraction_error": null,
+   "extracted_text": "# [DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice\n\n## About\n\nThis official notice applies to the academic year 2026-27.\n\n## Eligibility\n\nStudents who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.\n\nApplicants must have scored a minimum of 60% marks in the Class 12 board examination.\n\nThe annual family",
+   "text_truncated": false,
+   "spans": [
+    {
+     "label": "Section: [DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "page_number": null,
+     "section": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "start": 0,
+     "end": 68
+    },
+    {
+     "label": "Section: About",
+     "page_number": null,
+     "section": "About",
+     "start": 68,
+     "end": 138
+    },
+    {
+     "label": "Section: Eligibility",
+     "page_number": null,
+     "section": "Eligibility",
+     "start": 138,
+     "end": 470
+    },
+    {
+     "label": "Section: Required documents",
+     "page_number": null,
+     "section": "Required documents",
+     "start": 470,
+     "end": 637
+    },
+    {
+     "label": "Section: Important dates",
+     "page_number": null,
+     "section": "Important dates",
+     "start": 637,
+     "end": 726
+    },
+    {
+     "label": "Section: How to apply",
+     "page_number": null,
+     "section": "How to apply",
+     "start": 726,
+     "end": 944
+    },
+    {
+     "label": "Section: Selection",
+     "page_number": null,
+     "section": "Selection",
+     "start": 944,
+     "end": 1022
+    }
+   ],
+   "search_snippet": null,
+   "is_demo": true
+  },
+  {
+   "source_id": "S2",
+   "title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+   "url": "https://edunews.example/aarohan-scholarship",
+   "filename": null,
+   "publisher": "[DEMO] EduNews Daily",
+   "domain": "edunews.example",
+   "origin": "demo_fixture",
+   "source_type": "secondary_reporting",
+   "source_type_reason": "DEMO fixture representing secondary education news coverage.",
+   "publication_date": "2026-10-20",
+   "publication_date_origin": "HTML meta tag",
+   "updated_date": null,
+   "date_status": "found",
+   "retrieved_at": "2026-10-30T07:05:57+00:00",
+   "academic_cycle": "2026-27",
+   "event_date": null,
+   "extraction_status": "success",
+   "extraction_error": null,
+   "extracted_text": "# [DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained\n\nThe Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.\n\nStudents need at least 60% marks in Class 12 to apply.\n\nAccording to our reporters, the family income limit is ₹3 lakh per year.\n\nThe last date to apply is 14 December 2026.\n\nDocuments required inclu",
+   "text_truncated": false,
+   "spans": [
+    {
+     "label": "Section: [DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "start": 0,
+     "end": 586
+    }
+   ],
+   "search_snippet": null,
+   "is_demo": true
+  },
+  {
+   "source_id": "S3",
+   "title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+   "url": null,
+   "filename": "aarohan_notice_2025-26.pdf",
+   "publisher": "[DEMO] Aarohan Scholarship Board",
+   "domain": null,
+   "origin": "demo_fixture",
+   "source_type": "research_document",
+   "source_type_reason": "DEMO fixture representing an older PDF notice shared by a student.",
+   "publication_date": "2025-08-01",
+   "publication_date_origin": "demo fixture metadata",
+   "updated_date": null,
+   "date_status": "found",
+   "retrieved_at": "2026-10-30T07:05:57+00:00",
+   "academic_cycle": "2025-26",
+   "event_date": null,
+   "extraction_status": "success",
+   "extraction_error": null,
+   "extracted_text": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ? NOTICE FOR ACADEMIC YEAR 2025-26\nThis is a fictional demonstration document.\nEligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.\nMinimum marks: Students must have scored at least 55% marks in the Class 12 examination.\nIncome: The annual family income must not exceed Rs 2.5 lakh.\nDocuments to be submitted: Aadhaar",
+   "text_truncated": false,
+   "spans": [
+    {
+     "label": "Page 1",
+     "page_number": 1,
+     "section": null,
+     "start": 0,
+     "end": 551
+    }
+   ],
+   "search_snippet": null,
+   "is_demo": true
+  }
+ ],
+ "claims": [
+  {
+   "claim_id": "C1",
+   "claim_text": "This official notice applies to the academic year 2026-27.",
+   "claim_category": "academic_cycle",
+   "subject": "Academic cycle",
+   "value": "2026-27",
+   "value_type": "text",
+   "normalized_value": "2026-27",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "This official notice applies to the academic year 2026-27.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "About",
+   "start_offset": 78,
+   "end_offset": 136,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C2",
+   "claim_text": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.",
+   "claim_category": "eligibility",
+   "subject": "Eligibility",
+   "value": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "undergraduate, class 12",
+   "source_id": "S1",
+   "supporting_quote": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Eligibility",
+   "start_offset": 154,
+   "end_offset": 294,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C3",
+   "claim_text": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+   "claim_category": "minimum_marks",
+   "subject": "Minimum marks",
+   "value": "60%",
+   "value_type": "percent",
+   "normalized_value": "60",
+   "unit": "percent",
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S1",
+   "supporting_quote": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Eligibility",
+   "start_offset": 296,
+   "end_offset": 381,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C4",
+   "claim_text": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+   "claim_category": "eligibility",
+   "subject": "Eligibility",
+   "value": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S1",
+   "supporting_quote": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Eligibility",
+   "start_offset": 296,
+   "end_offset": 381,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C5",
+   "claim_text": "The annual family income of the applicant must not exceed ₹2.5 lakh from all sources.",
+   "claim_category": "income_criteria",
+   "subject": "Income criteria",
+   "value": "₹2.5 lakh",
+   "value_type": "money",
+   "normalized_value": "250000",
+   "unit": "currency per year",
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "The annual family income of the applicant must not exceed ₹2.5 lakh from all sources.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Eligibility",
+   "start_offset": 383,
+   "end_offset": 468,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "conflicting",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C6",
+   "claim_text": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "claim_category": "required_documents",
+   "subject": "Required documents",
+   "value": "aadhaar card, bank passbook, domicile certificate, income certificate, mark sheet",
+   "value_type": "list",
+   "normalized_value": "aadhaar card; bank passbook; domicile certificate; income certificate; mark sheet",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S1",
+   "supporting_quote": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Required documents",
+   "start_offset": 493,
+   "end_offset": 635,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "conflicting",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C7",
+   "claim_text": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "claim_category": "eligibility",
+   "subject": "Eligibility",
+   "value": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S1",
+   "supporting_quote": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Required documents",
+   "start_offset": 493,
+   "end_offset": 635,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C8",
+   "claim_text": "The last date to submit the online application is 14 December 2026.",
+   "claim_category": "deadline",
+   "subject": "Deadline",
+   "value": "14 December 2026",
+   "value_type": "date",
+   "normalized_value": "2026-12-14",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "The last date to submit the online application is 14 December 2026.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Important dates",
+   "start_offset": 657,
+   "end_offset": 724,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C9",
+   "claim_text": "The last date to submit the online application is 14 December 2026.",
+   "claim_category": "application_process",
+   "subject": "Application process",
+   "value": "The last date to submit the online application is 14 December 2026.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "The last date to submit the online application is 14 December 2026.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Important dates",
+   "start_offset": 657,
+   "end_offset": 724,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C10",
+   "claim_text": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+   "claim_category": "official_link",
+   "subject": "Official application link",
+   "value": "https://scholarships.aarohan.example/apply",
+   "value_type": "text",
+   "normalized_value": "https://scholarships.aarohan.example/apply",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "How to apply",
+   "start_offset": 743,
+   "end_offset": 860,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C11",
+   "claim_text": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+   "claim_category": "application_process",
+   "subject": "Application process",
+   "value": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "How to apply",
+   "start_offset": 743,
+   "end_offset": 860,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C12",
+   "claim_text": "Applications are verified by the institution before the merit list is published.",
+   "claim_category": "selection_process",
+   "subject": "Selection process",
+   "value": "Applications are verified by the institution before the merit list is published.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S1",
+   "supporting_quote": "Applications are verified by the institution before the merit list is published.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "How to apply",
+   "start_offset": 862,
+   "end_offset": 942,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C13",
+   "claim_text": "Selection is based on a merit list prepared from Class 12 marks.",
+   "claim_category": "selection_process",
+   "subject": "Selection process",
+   "value": "Selection is based on a merit list prepared from Class 12 marks.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S1",
+   "supporting_quote": "Selection is based on a merit list prepared from Class 12 marks.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "Selection",
+   "start_offset": 958,
+   "end_offset": 1022,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C14",
+   "claim_text": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+   "claim_category": "academic_cycle",
+   "subject": "Academic cycle",
+   "value": "2026-27",
+   "value_type": "text",
+   "normalized_value": "2026-27",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "undergraduate",
+   "source_id": "S2",
+   "supporting_quote": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 86,
+   "end_offset": 199,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C15",
+   "claim_text": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+   "claim_category": "eligibility",
+   "subject": "Eligibility",
+   "value": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "undergraduate",
+   "source_id": "S2",
+   "supporting_quote": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 86,
+   "end_offset": 199,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C16",
+   "claim_text": "Students need at least 60% marks in Class 12 to apply.",
+   "claim_category": "minimum_marks",
+   "subject": "Minimum marks",
+   "value": "60%",
+   "value_type": "percent",
+   "normalized_value": "60",
+   "unit": "percent",
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S2",
+   "supporting_quote": "Students need at least 60% marks in Class 12 to apply.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 201,
+   "end_offset": 255,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C17",
+   "claim_text": "According to our reporters, the family income limit is ₹3 lakh per year.",
+   "claim_category": "income_criteria",
+   "subject": "Income criteria",
+   "value": "₹3 lakh",
+   "value_type": "money",
+   "normalized_value": "300000",
+   "unit": "currency per year",
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S2",
+   "supporting_quote": "According to our reporters, the family income limit is ₹3 lakh per year.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 257,
+   "end_offset": 329,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "conflicting",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C18",
+   "claim_text": "The last date to apply is 14 December 2026.",
+   "claim_category": "deadline",
+   "subject": "Deadline",
+   "value": "14 December 2026",
+   "value_type": "date",
+   "normalized_value": "2026-12-14",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S2",
+   "supporting_quote": "The last date to apply is 14 December 2026.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 331,
+   "end_offset": 374,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "corroborated",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C19",
+   "claim_text": "Documents required include the Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and caste certificate.",
+   "claim_category": "required_documents",
+   "subject": "Required documents",
+   "value": "aadhaar card, bank passbook, caste certificate, income certificate, mark sheet",
+   "value_type": "list",
+   "normalized_value": "aadhaar card; bank passbook; caste certificate; income certificate; mark sheet",
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": "class 12",
+   "source_id": "S2",
+   "supporting_quote": "Documents required include the Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and caste certificate.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 376,
+   "end_offset": 498,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "conflicting",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C20",
+   "claim_text": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+   "claim_category": "renewal_requirements",
+   "subject": "Renewal requirements",
+   "value": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2026-27",
+   "scope": null,
+   "source_id": "S2",
+   "supporting_quote": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+   "quote_match": "exact",
+   "page_number": null,
+   "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+   "start_offset": 500,
+   "end_offset": 586,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": true
+  },
+  {
+   "claim_id": "C21",
+   "claim_text": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+   "claim_category": "selection_process",
+   "subject": "Selection process",
+   "value": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 0,
+   "end_offset": 40,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C22",
+   "claim_text": "NOTICE FOR ACADEMIC YEAR 2025-26",
+   "claim_category": "academic_cycle",
+   "subject": "Academic cycle",
+   "value": "2025-26",
+   "value_type": "text",
+   "normalized_value": "2025-26",
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "NOTICE FOR ACADEMIC YEAR 2025-26",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 41,
+   "end_offset": 73,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C23",
+   "claim_text": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+   "claim_category": "eligibility",
+   "subject": "Eligibility",
+   "value": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": "undergraduate",
+   "source_id": "S3",
+   "supporting_quote": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 118,
+   "end_offset": 214,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C24",
+   "claim_text": "Minimum marks: Students must have scored at least 55% marks in the Class 12 examination.",
+   "claim_category": "minimum_marks",
+   "subject": "Minimum marks",
+   "value": "55%",
+   "value_type": "percent",
+   "normalized_value": "55",
+   "unit": "percent",
+   "relevant_period": "2025-26",
+   "scope": "class 12",
+   "source_id": "S3",
+   "supporting_quote": "Minimum marks: Students must have scored at least 55% marks in the Class 12 examination.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 215,
+   "end_offset": 303,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C25",
+   "claim_text": "Income: The annual family income must not exceed Rs 2.5 lakh.",
+   "claim_category": "income_criteria",
+   "subject": "Income criteria",
+   "value": "Rs 2.5 lakh",
+   "value_type": "money",
+   "normalized_value": "250000",
+   "unit": "currency per year",
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "Income: The annual family income must not exceed Rs 2.5 lakh.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 304,
+   "end_offset": 365,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C26",
+   "claim_text": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+   "claim_category": "required_documents",
+   "subject": "Required documents",
+   "value": "aadhaar card, bank passbook, income certificate, mark sheet",
+   "value_type": "list",
+   "normalized_value": "aadhaar card; bank passbook; income certificate; mark sheet",
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 366,
+   "end_offset": 456,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C27",
+   "claim_text": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+   "claim_category": "application_process",
+   "subject": "Application process",
+   "value": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 366,
+   "end_offset": 456,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C28",
+   "claim_text": "The last date for submission of applications was 31 October 2025.",
+   "claim_category": "deadline",
+   "subject": "Deadline",
+   "value": "31 October 2025",
+   "value_type": "date",
+   "normalized_value": "2025-10-31",
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "The last date for submission of applications was 31 October 2025.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 457,
+   "end_offset": 522,
+   "extraction_confidence": 0.5,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  },
+  {
+   "claim_id": "C29",
+   "claim_text": "Selection is based on merit.",
+   "claim_category": "selection_process",
+   "subject": "Selection process",
+   "value": "Selection is based on merit.",
+   "value_type": "text",
+   "normalized_value": null,
+   "unit": null,
+   "relevant_period": "2025-26",
+   "scope": null,
+   "source_id": "S3",
+   "supporting_quote": "Selection is based on merit.",
+   "quote_match": "exact",
+   "page_number": 1,
+   "section": null,
+   "start_offset": 523,
+   "end_offset": 551,
+   "extraction_confidence": 0.4,
+   "extraction_method": "heuristic",
+   "evidence_status": "directly_supported",
+   "is_inferred": false,
+   "is_uncertain": false
+  }
+ ],
+ "conflicts": [
+  {
+   "conflict_id": "K1",
+   "label": "Possible conflict",
+   "claim_a": "C5",
+   "claim_b": "C17",
+   "source_a": "S1",
+   "source_b": "S2",
+   "quotation_a": "The annual family income of the applicant must not exceed ₹2.5 lakh from all sources.",
+   "quotation_b": "According to our reporters, the family income limit is ₹3 lakh per year.",
+   "field": "income_criteria",
+   "explanation": "S1 reports ₹2.5 lakh while S2 reports ₹3 lakh (250000 vs 300000 currency per year). Scope or period is not stated by every source, so this needs verification.",
+   "conflict_type": "numeric_mismatch",
+   "confidence": 0.65,
+   "scope_checks": {
+    "subject": "same field and similar subject",
+    "definition": "compatible units",
+    "period": "same period",
+    "scope": "scope not stated by at least one source"
+   },
+   "recommended_verification": "Verify the annual family income ceiling and the accepted income certificate format.",
+   "detection_method": "rule"
+  },
+  {
+   "conflict_id": "K2",
+   "label": "Potential inconsistency",
+   "claim_a": "C6",
+   "claim_b": "C19",
+   "source_a": "S1",
+   "source_b": "S2",
+   "quotation_a": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+   "quotation_b": "Documents required include the Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and caste certificate.",
+   "field": "required_documents",
+   "explanation": "Requirement lists differ — only S1 lists: domicile certificate; only S2 lists: caste certificate.",
+   "conflict_type": "different_requirements",
+   "confidence": 0.55,
+   "scope_checks": {
+    "subject": "same field and similar subject",
+    "definition": "no unit stated",
+    "period": "same period",
+    "scope": "same scope"
+   },
+   "recommended_verification": "Confirm the complete official document checklist before applying.",
+   "detection_method": "rule"
+  }
+ ],
+ "scope_notes": [
+  {
+   "claim_a": "C3",
+   "claim_b": "C24",
+   "field": "minimum_marks",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C6",
+   "claim_b": "C26",
+   "field": "required_documents",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C8",
+   "claim_b": "C28",
+   "field": "deadline",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C16",
+   "claim_b": "C24",
+   "field": "minimum_marks",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C17",
+   "claim_b": "C25",
+   "field": "income_criteria",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C18",
+   "claim_b": "C28",
+   "field": "deadline",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  },
+  {
+   "claim_a": "C19",
+   "claim_b": "C26",
+   "field": "required_documents",
+   "note": "Claims refer to different academic cycles (2026-27 vs 2025-26)."
+  }
+ ],
+ "information_gaps": [
+  {
+   "gap_id": "G1",
+   "expected_field": "income_criteria",
+   "field_label": "Income criteria",
+   "explanation": "Sources disagree about income criteria (see K1).",
+   "why_it_matters": "Income limits determine eligibility and change between cycles.",
+   "coverage_status": "conflicting",
+   "sources_checked": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "related_claims": [
+    "C5",
+    "C17",
+    "C25"
+   ],
+   "suggested_search": "Aarohan State Merit Scholarship (fictional demo) family income limit 2026-27 official notice",
+   "recommended_verification": "Verify the annual family income ceiling and the accepted income certificate format.",
+   "priority": "critical",
+   "confidence": 0.7
+  },
+  {
+   "gap_id": "G2",
+   "expected_field": "required_documents",
+   "field_label": "Required documents",
+   "explanation": "Sources disagree about required documents (see K2).",
+   "why_it_matters": "A missing document is one of the most common reasons applications are rejected.",
+   "coverage_status": "conflicting",
+   "sources_checked": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "related_claims": [
+    "C6",
+    "C19",
+    "C26"
+   ],
+   "suggested_search": "Aarohan State Merit Scholarship (fictional demo) required documents list 2026-27 official notice",
+   "recommended_verification": "Confirm the complete official document checklist before applying.",
+   "priority": "critical",
+   "confidence": 0.7
+  },
+  {
+   "gap_id": "G3",
+   "expected_field": "renewal_requirements",
+   "field_label": "Renewal requirements",
+   "explanation": "Renewal requirements is mentioned, but S2 explicitly state(s) it is unclear or unconfirmed. No source reviewed provides the actual information.",
+   "why_it_matters": "Students can lose funding in later years if renewal conditions are unknown.",
+   "coverage_status": "partially_found",
+   "sources_checked": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "related_claims": [
+    "C20"
+   ],
+   "suggested_search": "Aarohan State Merit Scholarship (fictional demo) renewal conditions 2026-27 official notice",
+   "recommended_verification": "Ask the scholarship authority for written renewal conditions.",
+   "priority": "medium",
+   "confidence": 0.6
+  }
+ ],
+ "freshness_warnings": [
+  {
+   "warning_id": "F1",
+   "source_id": "S3",
+   "claim_id": null,
+   "status": "potentially_outdated",
+   "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed.",
+   "reference_date": null
+  },
+  {
+   "warning_id": "F2",
+   "source_id": null,
+   "claim_id": null,
+   "status": "conflicting_dates",
+   "reason": "Sources refer to different academic cycles (S1: 2026-27, S2: 2026-27, S3: 2025-26). Make sure you rely on the current cycle.",
+   "reference_date": null
+  },
+  {
+   "warning_id": "F3",
+   "source_id": "S3",
+   "claim_id": "C28",
+   "status": "potentially_outdated",
+   "reason": "Deadline 2025-10-31 stated in S3 has already passed; it may belong to an earlier cycle or may have been extended.",
+   "reference_date": "2025-10-31"
+  }
+ ],
+ "source_freshness": [
+  {
+   "source_id": "S1",
+   "status": "current",
+   "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle.",
+   "age_days": 20
+  },
+  {
+   "source_id": "S2",
+   "status": "current",
+   "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle.",
+   "age_days": 10
+  },
+  {
+   "source_id": "S3",
+   "status": "potentially_outdated",
+   "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed.",
+   "age_days": 455
+  }
+ ],
+ "coverage_matrix": {
+  "domain": "scholarship",
+  "sources": [
+   "S1",
+   "S2",
+   "S3"
+  ],
+  "rows": [
+   {
+    "field": "eligibility",
+    "label": "Eligibility",
+    "critical": true,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C2",
+       "C4",
+       "C7"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "found",
+      "claim_ids": [
+       "C15"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C23"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   },
+   {
+    "field": "minimum_marks",
+    "label": "Minimum marks",
+    "critical": true,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C3"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "found",
+      "claim_ids": [
+       "C16"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C24"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   },
+   {
+    "field": "income_criteria",
+    "label": "Income criteria",
+    "critical": true,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "conflict",
+      "claim_ids": [
+       "C5"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "conflict",
+      "claim_ids": [
+       "C17"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C25"
+      ]
+     }
+    ],
+    "overall": "conflicting",
+    "overall_label": "Needs review"
+   },
+   {
+    "field": "required_documents",
+    "label": "Required documents",
+    "critical": true,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "conflict",
+      "claim_ids": [
+       "C6"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "conflict",
+      "claim_ids": [
+       "C19"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C26"
+      ]
+     }
+    ],
+    "overall": "conflicting",
+    "overall_label": "Needs review"
+   },
+   {
+    "field": "deadline",
+    "label": "Deadline",
+    "critical": true,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C8"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "found",
+      "claim_ids": [
+       "C18"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C28"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   },
+   {
+    "field": "application_process",
+    "label": "Application process",
+    "critical": false,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C9",
+       "C11"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "missing",
+      "claim_ids": []
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C27"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   },
+   {
+    "field": "official_link",
+    "label": "Official application link",
+    "critical": false,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C10"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "missing",
+      "claim_ids": []
+     },
+     {
+      "source_id": "S3",
+      "status": "missing",
+      "claim_ids": []
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Single source"
+   },
+   {
+    "field": "academic_cycle",
+    "label": "Academic cycle",
+    "critical": false,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C1"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "found",
+      "claim_ids": [
+       "C14"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C22"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   },
+   {
+    "field": "renewal_requirements",
+    "label": "Renewal requirements",
+    "critical": false,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "missing",
+      "claim_ids": []
+     },
+     {
+      "source_id": "S2",
+      "status": "partial",
+      "claim_ids": [
+       "C20"
+      ]
+     },
+     {
+      "source_id": "S3",
+      "status": "missing",
+      "claim_ids": []
+     }
+    ],
+    "overall": "partially_found",
+    "overall_label": "Partial"
+   },
+   {
+    "field": "selection_process",
+    "label": "Selection process",
+    "critical": false,
+    "cells": [
+     {
+      "source_id": "S1",
+      "status": "found",
+      "claim_ids": [
+       "C12",
+       "C13"
+      ]
+     },
+     {
+      "source_id": "S2",
+      "status": "missing",
+      "claim_ids": []
+     },
+     {
+      "source_id": "S3",
+      "status": "found",
+      "claim_ids": [
+       "C21",
+       "C29"
+      ]
+     }
+    ],
+    "overall": "found",
+    "overall_label": "Complete"
+   }
+  ]
+ },
+ "claim_relationships": {
+  "nodes": [
+   {
+    "id": "S1",
+    "type": "source",
+    "label": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+    "data": {
+     "url": "https://scholarships.aarohan.example/notice",
+     "filename": null,
+     "publisher": "[DEMO] Aarohan Scholarship Board",
+     "source_type": "official_primary",
+     "publication_date": "2026-10-10",
+     "extraction_status": "success"
+    }
+   },
+   {
+    "id": "S2",
+    "type": "source",
+    "label": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+    "data": {
+     "url": "https://edunews.example/aarohan-scholarship",
+     "filename": null,
+     "publisher": "[DEMO] EduNews Daily",
+     "source_type": "secondary_reporting",
+     "publication_date": "2026-10-20",
+     "extraction_status": "success"
+    }
+   },
+   {
+    "id": "S3",
+    "type": "source",
+    "label": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+    "data": {
+     "url": null,
+     "filename": "aarohan_notice_2025-26.pdf",
+     "publisher": "[DEMO] Aarohan Scholarship Board",
+     "source_type": "research_document",
+     "publication_date": "2025-08-01",
+     "extraction_status": "success"
+    }
+   },
+   {
+    "id": "C1",
+    "type": "claim",
+    "label": "This official notice applies to the academic year 2026-27.",
+    "data": {
+     "category": "academic_cycle",
+     "value": "2026-27",
+     "source_id": "S1",
+     "supporting_quote": "This official notice applies to the academic year 2026-27.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "About",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C2",
+    "type": "claim",
+    "label": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state ar",
+    "data": {
+     "category": "eligibility",
+     "value": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.",
+     "source_id": "S1",
+     "supporting_quote": "Students who have passed Class 12 from a recognised board and are enrolled in an undergraduate programme in the state are eligible to apply.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Eligibility",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C3",
+    "type": "claim",
+    "label": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+    "data": {
+     "category": "minimum_marks",
+     "value": "60%",
+     "source_id": "S1",
+     "supporting_quote": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Eligibility",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C4",
+    "type": "claim",
+    "label": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+    "data": {
+     "category": "eligibility",
+     "value": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+     "source_id": "S1",
+     "supporting_quote": "Applicants must have scored a minimum of 60% marks in the Class 12 board examination.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Eligibility",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C5",
+    "type": "claim",
+    "label": "The annual family income of the applicant must not exceed ₹2.5 lakh from all sources.",
+    "data": {
+     "category": "income_criteria",
+     "value": "₹2.5 lakh",
+     "source_id": "S1",
+     "supporting_quote": "The annual family income of the applicant must not exceed ₹2.5 lakh from all sources.",
+     "evidence_status": "conflicting",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Eligibility",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C6",
+    "type": "claim",
+    "label": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and",
+    "data": {
+     "category": "required_documents",
+     "value": "aadhaar card, bank passbook, domicile certificate, income certificate, mark sheet",
+     "source_id": "S1",
+     "supporting_quote": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+     "evidence_status": "conflicting",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Required documents",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C7",
+    "type": "claim",
+    "label": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and",
+    "data": {
+     "category": "eligibility",
+     "value": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+     "source_id": "S1",
+     "supporting_quote": "Applicants must upload the following documents: Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and domicile certificate.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Required documents",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C8",
+    "type": "claim",
+    "label": "The last date to submit the online application is 14 December 2026.",
+    "data": {
+     "category": "deadline",
+     "value": "14 December 2026",
+     "source_id": "S1",
+     "supporting_quote": "The last date to submit the online application is 14 December 2026.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Important dates",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C9",
+    "type": "claim",
+    "label": "The last date to submit the online application is 14 December 2026.",
+    "data": {
+     "category": "application_process",
+     "value": "The last date to submit the online application is 14 December 2026.",
+     "source_id": "S1",
+     "supporting_quote": "The last date to submit the online application is 14 December 2026.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Important dates",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C10",
+    "type": "claim",
+    "label": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+    "data": {
+     "category": "official_link",
+     "value": "https://scholarships.aarohan.example/apply",
+     "source_id": "S1",
+     "supporting_quote": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "How to apply",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C11",
+    "type": "claim",
+    "label": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+    "data": {
+     "category": "application_process",
+     "value": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+     "source_id": "S1",
+     "supporting_quote": "Register on the official portal at https://scholarships.aarohan.example/apply and submit the application form online.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "How to apply",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C12",
+    "type": "claim",
+    "label": "Applications are verified by the institution before the merit list is published.",
+    "data": {
+     "category": "selection_process",
+     "value": "Applications are verified by the institution before the merit list is published.",
+     "source_id": "S1",
+     "supporting_quote": "Applications are verified by the institution before the merit list is published.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "How to apply",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C13",
+    "type": "claim",
+    "label": "Selection is based on a merit list prepared from Class 12 marks.",
+    "data": {
+     "category": "selection_process",
+     "value": "Selection is based on a merit list prepared from Class 12 marks.",
+     "source_id": "S1",
+     "supporting_quote": "Selection is based on a merit list prepared from Class 12 marks.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "Selection",
+     "source_title": "[DEMO] Aarohan State Merit Scholarship 2026-27 — Official Notice",
+     "source_url": "https://scholarships.aarohan.example/notice"
+    }
+   },
+   {
+    "id": "C14",
+    "type": "claim",
+    "label": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+    "data": {
+     "category": "academic_cycle",
+     "value": "2026-27",
+     "source_id": "S2",
+     "supporting_quote": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C15",
+    "type": "claim",
+    "label": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+    "data": {
+     "category": "eligibility",
+     "value": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+     "source_id": "S2",
+     "supporting_quote": "The Aarohan State Merit Scholarship is open to undergraduate students in the state for the academic year 2026-27.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C16",
+    "type": "claim",
+    "label": "Students need at least 60% marks in Class 12 to apply.",
+    "data": {
+     "category": "minimum_marks",
+     "value": "60%",
+     "source_id": "S2",
+     "supporting_quote": "Students need at least 60% marks in Class 12 to apply.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C17",
+    "type": "claim",
+    "label": "According to our reporters, the family income limit is ₹3 lakh per year.",
+    "data": {
+     "category": "income_criteria",
+     "value": "₹3 lakh",
+     "source_id": "S2",
+     "supporting_quote": "According to our reporters, the family income limit is ₹3 lakh per year.",
+     "evidence_status": "conflicting",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C18",
+    "type": "claim",
+    "label": "The last date to apply is 14 December 2026.",
+    "data": {
+     "category": "deadline",
+     "value": "14 December 2026",
+     "source_id": "S2",
+     "supporting_quote": "The last date to apply is 14 December 2026.",
+     "evidence_status": "corroborated",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C19",
+    "type": "claim",
+    "label": "Documents required include the Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and caste certificat",
+    "data": {
+     "category": "required_documents",
+     "value": "aadhaar card, bank passbook, caste certificate, income certificate, mark sheet",
+     "source_id": "S2",
+     "supporting_quote": "Documents required include the Aadhaar card, income certificate, Class 12 mark sheet, bank passbook and caste certificate.",
+     "evidence_status": "conflicting",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C20",
+    "type": "claim",
+    "label": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+    "data": {
+     "category": "renewal_requirements",
+     "value": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+     "source_id": "S2",
+     "supporting_quote": "It remains unclear whether the scholarship can be renewed in the second year of study.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": null,
+     "section": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explain",
+     "source_title": "[DEMO] Aarohan Scholarship 2026-27: last date, eligibility and documents explained",
+     "source_url": "https://edunews.example/aarohan-scholarship"
+    }
+   },
+   {
+    "id": "C21",
+    "type": "claim",
+    "label": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+    "data": {
+     "category": "selection_process",
+     "value": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+     "source_id": "S3",
+     "supporting_quote": "[DEMO] AAROHAN STATE MERIT SCHOLARSHIP ?",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C22",
+    "type": "claim",
+    "label": "NOTICE FOR ACADEMIC YEAR 2025-26",
+    "data": {
+     "category": "academic_cycle",
+     "value": "2025-26",
+     "source_id": "S3",
+     "supporting_quote": "NOTICE FOR ACADEMIC YEAR 2025-26",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C23",
+    "type": "claim",
+    "label": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+    "data": {
+     "category": "eligibility",
+     "value": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+     "source_id": "S3",
+     "supporting_quote": "Eligibility: Students enrolled in an undergraduate programme in the state are eligible to apply.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C24",
+    "type": "claim",
+    "label": "Minimum marks: Students must have scored at least 55% marks in the Class 12 examination.",
+    "data": {
+     "category": "minimum_marks",
+     "value": "55%",
+     "source_id": "S3",
+     "supporting_quote": "Minimum marks: Students must have scored at least 55% marks in the Class 12 examination.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C25",
+    "type": "claim",
+    "label": "Income: The annual family income must not exceed Rs 2.5 lakh.",
+    "data": {
+     "category": "income_criteria",
+     "value": "Rs 2.5 lakh",
+     "source_id": "S3",
+     "supporting_quote": "Income: The annual family income must not exceed Rs 2.5 lakh.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C26",
+    "type": "claim",
+    "label": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+    "data": {
+     "category": "required_documents",
+     "value": "aadhaar card, bank passbook, income certificate, mark sheet",
+     "source_id": "S3",
+     "supporting_quote": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C27",
+    "type": "claim",
+    "label": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+    "data": {
+     "category": "application_process",
+     "value": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+     "source_id": "S3",
+     "supporting_quote": "Documents to be submitted: Aadhaar card, income certificate, mark sheet and bank passbook.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C28",
+    "type": "claim",
+    "label": "The last date for submission of applications was 31 October 2025.",
+    "data": {
+     "category": "deadline",
+     "value": "31 October 2025",
+     "source_id": "S3",
+     "supporting_quote": "The last date for submission of applications was 31 October 2025.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "C29",
+    "type": "claim",
+    "label": "Selection is based on merit.",
+    "data": {
+     "category": "selection_process",
+     "value": "Selection is based on merit.",
+     "source_id": "S3",
+     "supporting_quote": "Selection is based on merit.",
+     "evidence_status": "directly_supported",
+     "quote_match": "exact",
+     "page_number": 1,
+     "section": null,
+     "source_title": "[DEMO] Aarohan Scholarship Notice 2025-26 (PDF)",
+     "source_url": null
+    }
+   },
+   {
+    "id": "GAP-G3",
+    "type": "gap",
+    "label": "Renewal requirements: partially found",
+    "data": {
+     "gap_id": "G3",
+     "explanation": "Renewal requirements is mentioned, but S2 explicitly state(s) it is unclear or unconfirmed. No source reviewed provides the actual information.",
+     "priority": "medium"
+    }
+   }
+  ],
+  "edges": [
+   {
+    "id": "e-S1-C1",
+    "source": "S1",
+    "target": "C1",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C2",
+    "source": "S1",
+    "target": "C2",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C3",
+    "source": "S1",
+    "target": "C3",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C4",
+    "source": "S1",
+    "target": "C4",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C5",
+    "source": "S1",
+    "target": "C5",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C6",
+    "source": "S1",
+    "target": "C6",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C7",
+    "source": "S1",
+    "target": "C7",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C8",
+    "source": "S1",
+    "target": "C8",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C9",
+    "source": "S1",
+    "target": "C9",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C10",
+    "source": "S1",
+    "target": "C10",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C11",
+    "source": "S1",
+    "target": "C11",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C12",
+    "source": "S1",
+    "target": "C12",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S1-C13",
+    "source": "S1",
+    "target": "C13",
+    "relation": "states",
+    "explanation": "S1 states this claim."
+   },
+   {
+    "id": "e-S2-C14",
+    "source": "S2",
+    "target": "C14",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C15",
+    "source": "S2",
+    "target": "C15",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C16",
+    "source": "S2",
+    "target": "C16",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C17",
+    "source": "S2",
+    "target": "C17",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C18",
+    "source": "S2",
+    "target": "C18",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C19",
+    "source": "S2",
+    "target": "C19",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S2-C20",
+    "source": "S2",
+    "target": "C20",
+    "relation": "states",
+    "explanation": "S2 states this claim."
+   },
+   {
+    "id": "e-S3-C21",
+    "source": "S3",
+    "target": "C21",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C22",
+    "source": "S3",
+    "target": "C22",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C23",
+    "source": "S3",
+    "target": "C23",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C24",
+    "source": "S3",
+    "target": "C24",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C25",
+    "source": "S3",
+    "target": "C25",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C26",
+    "source": "S3",
+    "target": "C26",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C27",
+    "source": "S3",
+    "target": "C27",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C28",
+    "source": "S3",
+    "target": "C28",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "e-S3-C29",
+    "source": "S3",
+    "target": "C29",
+    "relation": "states",
+    "explanation": "S3 states this claim."
+   },
+   {
+    "id": "c-C1-C14",
+    "source": "C14",
+    "target": "C1",
+    "relation": "corroborates",
+    "explanation": "S2 reports the same academic cycle value."
+   },
+   {
+    "id": "c-C3-C16",
+    "source": "C16",
+    "target": "C3",
+    "relation": "corroborates",
+    "explanation": "S2 reports the same minimum marks value."
+   },
+   {
+    "id": "c-C8-C18",
+    "source": "C18",
+    "target": "C8",
+    "relation": "corroborates",
+    "explanation": "S2 reports the same deadline value."
+   },
+   {
+    "id": "x-K1",
+    "source": "C17",
+    "target": "C5",
+    "relation": "conflicts_with",
+    "explanation": "Possible conflict (K1): S1 reports ₹2.5 lakh while S2 reports ₹3 lakh (250000 vs 300000 currency per year). Scope or period is not stated by every source, so this needs verification."
+   },
+   {
+    "id": "x-K2",
+    "source": "C19",
+    "target": "C6",
+    "relation": "conflicts_with",
+    "explanation": "Potential inconsistency (K2): Requirement lists differ — only S1 lists: domicile certificate; only S2 lists: caste certificate."
+   },
+   {
+    "id": "m-C20-GAP-G3",
+    "source": "C20",
+    "target": "GAP-G3",
+    "relation": "missing_evidence",
+    "explanation": "Renewal requirements is mentioned, but S2 explicitly state(s) it is unclear or unconfirmed. No source reviewed provides the actual information."
+   }
+  ]
+ },
+ "evidence_assessment": {
+  "method": "Weighted sum of five documented component scores (0-1). Not a probability of truth.",
+  "weights": {
+   "authority": 0.25,
+   "relevance": 0.15,
+   "freshness": 0.2,
+   "directness": 0.25,
+   "corroboration": 0.15
+  },
+  "claims": [
+   {
+    "claim_id": "C1",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'academic_cycle' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S2."
+     }
+    ],
+    "score": 0.863,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C2",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'eligibility' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.825,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C3",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'minimum_marks' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S2."
+     }
+    ],
+    "score": 0.863,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C4",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'eligibility' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.81,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C5",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'income_criteria' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.81,
+    "evidence_status": "conflicting",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [
+     "C17"
+    ],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Possible conflict with C17; neither source is assumed correct."
+   },
+   {
+    "claim_id": "C6",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'required_documents' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.81,
+    "evidence_status": "conflicting",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [
+     "C19"
+    ],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Possible conflict with C19; neither source is assumed correct."
+   },
+   {
+    "claim_id": "C7",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'eligibility' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.81,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C8",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'deadline' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S2."
+     }
+    ],
+    "score": 0.863,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C9",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'application_process' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.81,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C10",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'official_link' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.825,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C11",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'application_process' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.825,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C12",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.8,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'selection_process' and shares 2 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.84,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C13",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.9,
+      "weight": 0.25,
+      "reason": "Official/primary source (government or institution domain)."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'selection_process' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.825,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S1"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C14",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.9,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'academic_cycle' and shares 3 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S1."
+     }
+    ],
+    "score": 0.845,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C15",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.9,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'eligibility' and shares 3 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.792,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C16",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'minimum_marks' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S1."
+     }
+    ],
+    "score": 0.8,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C17",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'income_criteria' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.748,
+    "evidence_status": "conflicting",
+    "supporting_sources": [
+     "S2"
+    ],
+    "conflicting_claims": [
+     "C5"
+    ],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Possible conflict with C5; neither source is assumed correct."
+   },
+   {
+    "claim_id": "C18",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'deadline' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.65,
+      "weight": 0.15,
+      "reason": "Independently corroborated by 1 other source(s): S1."
+     }
+    ],
+    "score": 0.8,
+    "evidence_status": "corroborated",
+    "supporting_sources": [
+     "S1",
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted and corroborated by 1 independent source(s)."
+   },
+   {
+    "claim_id": "C19",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'required_documents' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.748,
+    "evidence_status": "conflicting",
+    "supporting_sources": [
+     "S2"
+    ],
+    "conflicting_claims": [
+     "C6"
+    ],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Possible conflict with C6; neither source is assumed correct."
+   },
+   {
+    "claim_id": "C20",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.65,
+      "weight": 0.25,
+      "reason": "Secondary reporting by a news publisher."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'renewal_requirements' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 1.0,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.748,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S2"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C21",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 1.0,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'selection_process' and shares 4 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.693,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C22",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'academic_cycle' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C23",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'eligibility' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.647,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C24",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'minimum_marks' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C25",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'income_criteria' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C26",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'required_documents' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C27",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'application_process' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C28",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.6,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'deadline' and shares 0 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.632,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   },
+   {
+    "claim_id": "C29",
+    "components": [
+     {
+      "name": "authority",
+      "value": 0.75,
+      "weight": 0.25,
+      "reason": "Research or institutional document."
+     },
+     {
+      "name": "relevance",
+      "value": 0.7,
+      "weight": 0.15,
+      "reason": "Claim belongs to expected field 'selection_process' and shares 1 keyword(s) with the topic/question."
+     },
+     {
+      "name": "freshness",
+      "value": 0.3,
+      "weight": 0.2,
+      "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed."
+     },
+     {
+      "name": "directness",
+      "value": 1.0,
+      "weight": 0.25,
+      "reason": "Supporting quotation found verbatim in the source text."
+     },
+     {
+      "name": "corroboration",
+      "value": 0.3,
+      "weight": 0.15,
+      "reason": "No independent source reports the same value."
+     }
+    ],
+    "score": 0.647,
+    "evidence_status": "directly_supported",
+    "supporting_sources": [
+     "S3"
+    ],
+    "conflicting_claims": [],
+    "missing_evidence": [
+     "Independent corroboration",
+     "Confirmation from an official/primary source"
+    ],
+    "reason": "Directly quoted from a single source; not independently corroborated."
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "S1",
+    "source_type": "official_primary",
+    "authority": 0.9,
+    "authority_reason": "DEMO fixture representing the official scholarship board notice.",
+    "freshness": 1.0,
+    "freshness_reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle.",
+    "relevance": 0.65,
+    "relevance_reason": "Average relevance of 13 extracted claim(s).",
+    "claim_count": 13
+   },
+   {
+    "source_id": "S2",
+    "source_type": "secondary_reporting",
+    "authority": 0.65,
+    "authority_reason": "DEMO fixture representing secondary education news coverage.",
+    "freshness": 1.0,
+    "freshness_reason": "Refers to academic cycle 2026-27, which is current or upcoming according to the stated cycle.",
+    "relevance": 0.69,
+    "relevance_reason": "Average relevance of 7 extracted claim(s).",
+    "claim_count": 7
+   },
+   {
+    "source_id": "S3",
+    "source_type": "research_document",
+    "authority": 0.75,
+    "authority_reason": "DEMO fixture representing an older PDF notice shared by a student.",
+    "freshness": 0.3,
+    "freshness_reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed.",
+    "relevance": 0.67,
+    "relevance_reason": "Average relevance of 9 extracted claim(s).",
+    "claim_count": 9
+   }
+  ]
+ },
+ "research_completeness": {
+  "score": 79.9,
+  "label": "High coverage",
+  "components": [
+   {
+    "name": "field_coverage",
+    "value": 0.855,
+    "weight": 0.4,
+    "explanation": "Weighted coverage of 10 expected fields (found=1, partial/conflicting=0.5). Found: Eligibility, Minimum marks, Deadline, Application process, Official application link, Academic cycle, Selection process."
+   },
+   {
+    "name": "evidence_availability",
+    "value": 0.862,
+    "weight": 0.2,
+    "explanation": "25 of 29 claims are directly supported or corroborated."
+   },
+   {
+    "name": "source_diversity",
+    "value": 0.767,
+    "weight": 0.15,
+    "explanation": "2 independent publisher(s) and 3 source type(s) among usable sources."
+   },
+   {
+    "name": "conflict_resolution",
+    "value": 0.8,
+    "weight": 0.1,
+    "explanation": "2 possible conflict(s) across 2 field(s) remain unresolved."
+   },
+   {
+    "name": "critical_fields",
+    "value": 0.6,
+    "weight": 0.15,
+    "explanation": "3 of 5 critical fields found without conflict; not resolved: Income criteria, Required documents."
+   }
+  ],
+  "formula": "score = 100 × (0.40·field_coverage + 0.20·evidence_availability + 0.15·source_diversity + 0.10·conflict_resolution + 0.15·critical_fields)",
+  "disclaimer": "Measures how well the reviewed sources cover the domain's research criteria. It is not a measure of factual accuracy and does not guarantee completeness."
+ },
+ "verification_checklist": [
+  {
+   "task_id": "T1",
+   "task": "Verify the family income limit — sources disagree",
+   "reason": "1 possible conflict(s) across S1, S2: [K1] S1 reports ₹2.5 lakh while S2 reports ₹3 lakh (250000 vs 300000 currency per year). Scope or period is not stated by every source, so this needs verification.",
+   "priority": "critical",
+   "related_gap_id": null,
+   "related_conflict_id": "K1",
+   "related_claim_id": null,
+   "suggested_source": "Official source already reviewed: https://scholarships.aarohan.example/notice (S1) — check its latest version",
+   "suggested_action": "Verify the annual family income ceiling and the accepted income certificate format.",
+   "status": "pending"
+  },
+  {
+   "task_id": "T2",
+   "task": "Confirm the official list of required documents — sources disagree",
+   "reason": "1 possible conflict(s) across S1, S2: [K2] Requirement lists differ — only S1 lists: domicile certificate; only S2 lists: caste certificate.",
+   "priority": "critical",
+   "related_gap_id": null,
+   "related_conflict_id": "K2",
+   "related_claim_id": null,
+   "suggested_source": "Official source already reviewed: https://scholarships.aarohan.example/notice (S1) — check its latest version",
+   "suggested_action": "Confirm the complete official document checklist before applying.",
+   "status": "pending"
+  },
+  {
+   "task_id": "T3",
+   "task": "Check whether information in S3 is still current",
+   "reason": "Refers to academic cycle 2025-26, which ended before today (current cycle is 2026-27). Requirements may have changed.",
+   "priority": "high",
+   "related_gap_id": null,
+   "related_conflict_id": null,
+   "related_claim_id": null,
+   "suggested_source": "Official source already reviewed: https://scholarships.aarohan.example/notice (S1) — check its latest version",
+   "suggested_action": "Compare against the most recent official publication or update.",
+   "status": "pending"
+  },
+  {
+   "task_id": "T4",
+   "task": "Confirm which academic cycle the information applies to",
+   "reason": "Sources refer to different academic cycles (S1: 2026-27, S2: 2026-27, S3: 2025-26). Make sure you rely on the current cycle.",
+   "priority": "high",
+   "related_gap_id": null,
+   "related_conflict_id": null,
+   "related_claim_id": null,
+   "suggested_source": "Official source already reviewed: https://scholarships.aarohan.example/notice (S1) — check its latest version",
+   "suggested_action": "Compare against the most recent official publication or update.",
+   "status": "pending"
+  },
+  {
+   "task_id": "T5",
+   "task": "Check the latest renewal policy",
+   "reason": "Renewal requirements is mentioned, but S2 explicitly state(s) it is unclear or unconfirmed. No source reviewed provides the actual information.",
+   "priority": "medium",
+   "related_gap_id": "G3",
+   "related_conflict_id": null,
+   "related_claim_id": null,
+   "suggested_source": "Official source already reviewed: https://scholarships.aarohan.example/notice (S1) — check its latest version",
+   "suggested_action": "Ask the scholarship authority for written renewal conditions. Suggested search: \"Aarohan State Merit Scholarship (fictional demo) renewal conditions 2026-27 official notice\"",
+   "status": "pending"
+  }
+ ],
+ "final_report": {
+  "title": "Scout AI — Scholarship Intelligence Report: Aarohan State Merit Scholarship (fictional demo)",
+  "executive_summary": "Scout reviewed 3 of 3 source(s) about \"Aarohan State Merit Scholarship (fictional demo)\" and extracted 29 traceable claim(s), 25 of which are directly quoted or corroborated. It found 2 possible conflict(s), 0 expected field(s) not found in the sources reviewed and 3 freshness warning(s). Research completeness against the scholarship criteria is 79.9/100 (high coverage).",
+  "key_findings": [
+   "Corroborated: This official notice applies to the academic year 2026-27. [S1]",
+   "Corroborated: Applicants must have scored a minimum of 60% marks in the Class 12 board examination. [S1]",
+   "Corroborated: The last date to submit the online application is 14 December 2026. [S1]",
+   "Possible conflict on income criteria: S1 reports ₹2.5 lakh while S2 reports ₹3 lakh (250000 vs 300000 currency per year). Scope or period is not stated by every source, so this needs verification.",
+   "Potential inconsistency on required documents: Requirement lists differ — only S1 lists: domicile certificate; only S2 lists: caste certificate."
+  ],
+  "unanswered_questions": [
+   "What is the confirmed income criteria?",
+   "What is the confirmed required documents?"
+  ],
+  "generated_by": "deterministic"
+ },
+ "limitations": [
+  "DEMO MODE: sources are fictional, clearly labelled fixtures — not live research.",
+  "Findings are based only on the sources reviewed; information not found may still exist elsewhere.",
+  "Possible conflicts and gaps are prompts for verification, not verdicts on which source is correct.",
+  "Evidence and completeness scores are rule-based indicators of evidence quality and coverage, not probabilities of truth.",
+  "Publication dates come only from explicit page/PDF metadata; undated sources cannot be checked for freshness.",
+  "Results are held only in this browser tab and are not stored on the server."
+ ],
+ "errors": []
+}
